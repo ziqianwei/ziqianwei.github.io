@@ -15,7 +15,7 @@ Broadly, I am motivated by questions that connect structure, geometry, and uncer
 
 Research Interests
 ======
-Latent Variable Models
-High-dimensional Statistics
-Graphical Model
-Manifold-Inspired Methods
+- Latent Variable Models
+- High-dimensional Statistics
+- Graphical Model
+- Manifold-Inspired Methods
