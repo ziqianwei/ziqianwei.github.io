@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Ziqian's Webpage"
 title_separator          : "-"
 name                     : &name "Ziqian Wei"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,11 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "Ziqian Wei (魏紫千)"
   pronouns         : "she/her"  
-  bio              : # ""
+  bio              : "Pronounced /dzuh-chyen/"
   location         : "Ann Arbor, US"
   employer         : "University of Michigan, Ann Arbor"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "weizq@umich.edu" 
 
   # Academic websites
   academia         : # URL
@@ -57,7 +57,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
