@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/MyProfile.png"
+  avatar           : "MyProfile.png"
   name             : "Ziqian Wei (魏紫千)"
   pronouns         : "she/her"  
   bio              : "Pronounced /dzuh-chyen/"
@@ -359,3 +359,4 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+# rebuild trigger
