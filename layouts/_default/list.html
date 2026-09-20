@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="page-intro">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="intro-copy">{{ . }}</div>{{ end }}
+</header>
+
+<div class="post-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="post-row">
+    <div>
+      <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Params.summary }}<p class="summary">{{ . }}</p>{{ end }}
+    </div>
+    <div class="post-meta">
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+      {{ with .Params.tags }}<span>{{ delimit . " · " }}</span>{{ end }}
+    </div>
+  </article>
+  {{ else }}
+  <p class="muted">Nothing here yet.</p>
+  {{ end }}
+</div>
+{{ end }}

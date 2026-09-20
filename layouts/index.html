@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>Ziqian Wei</h1>
+  <p>{{ site.Params.description }}</p>
+</section>
+
+<section class="section-head">
+  <h2>Recent</h2>
+</section>
+
+<div class="post-list">
+  {{ range first 8 (where site.RegularPages "Section" "in" (slice "knowledge" "papers" "books")) }}
+  <article class="post-row">
+    <div>
+      <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Params.summary }}<p class="summary">{{ . }}</p>{{ end }}
+    </div>
+    <div class="post-meta">
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+      <span>{{ title .Section }}</span>
+    </div>
+  </article>
+  {{ else }}
+  <p class="muted">No notes yet.</p>
+  {{ end }}
+</div>
+{{ end }}

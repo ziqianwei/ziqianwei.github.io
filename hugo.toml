@@ -1,0 +1,15 @@
+baseURL = "https://ziqianwei.github.io/"
+languageCode = "en-us"
+title = "Ziqian Wei"
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  description = "Notes on research, papers, books, and things I’m learning."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

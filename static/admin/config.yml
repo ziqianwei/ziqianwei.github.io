@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: ziqianwei/ziqianwei.github.io
+  branch: master
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "knowledge"
+    label: "Knowledge"
+    folder: "content/knowledge"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
+      - {label: "Summary", name: "summary", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "papers"
+    label: "Papers"
+    folder: "content/papers"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
+      - {label: "Authors", name: "authors", widget: "string", required: false}
+      - {label: "Paper link", name: "paper_url", widget: "string", required: false}
+      - {label: "Summary", name: "summary", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "books"
+    label: "Books"
+    folder: "content/books"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
+      - {label: "Author", name: "author", widget: "string", required: false}
+      - {label: "Summary", name: "summary", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
